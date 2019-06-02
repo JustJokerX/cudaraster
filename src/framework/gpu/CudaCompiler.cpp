@@ -282,6 +282,10 @@ void CudaCompiler::staticInit(void)
         {
             String prog = sprintf("%c:\\%s", drive, (progX86 == 0) ? "Program Files" : "Program Files (x86)");
 		    potentialCudaPaths.add(prog + sprintf("\\NVIDIA GPU Computing Toolkit\\CUDA\\v%.1f", driverVersion));
+			potentialVSPaths.add(prog + "\\Microsoft Visual Studio\\2019\\Community");
+			potentialVSPaths.add(prog + "\\Microsoft Visual Studio\\2017\\Community");
+			potentialVSPaths.add(prog + "\\Microsoft Visual Studio 14.0");
+			potentialVSPaths.add(prog + "\\Microsoft Visual Studio 12.0");
             potentialVSPaths.add(prog + "\\Microsoft Visual Studio 10.0");
             potentialVSPaths.add(prog + "\\Microsoft Visual Studio 9.0");
             potentialVSPaths.add(prog + "\\Microsoft Visual Studio 8");
