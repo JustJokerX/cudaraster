@@ -134,6 +134,9 @@ Package structure
 
 Version history
 ---------------
+Version 1.1, June 02, 2019
+- Upgrade to Visual Studio 2019 (previously 2010)
+- Fix an OpenGL pixel format not found issue.
 
 Version 1.1, May 22, 2012
 - Fix incorrect pixel coverage computation with CUDA 4.1 and above.
